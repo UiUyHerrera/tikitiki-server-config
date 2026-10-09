@@ -1,6 +1,6 @@
 {
   "serverName": "SERVER TIKITIKI COBBLEMON BY XENS",
-  "serverAddress": "",
+  "serverAddress": "stamina-gloss.tun.ply.gg",
   "serverIcon": "server/icon.png",
   "serverIconSha1": "12af38e29560b244203857f07b13fafb8eee7a74",
   "minecraftVersion": "1.21.1",
@@ -2176,5 +2176,5 @@
     "sha1": "54649df93c4afec8d61307a4a84df3e122638679",
     "size": 21946914
   },
-  "updatedAt": "2026-10-09T02:52:40Z"
+  "updatedAt": "2026-10-09T18:18:51Z"
 }
