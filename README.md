@@ -1,20 +1,20 @@
 # tikitiki-server-config
 
-Configuración del servidor de Minecraft TikiTiki (Cobblemon, 1.21.1) y de su launcher. El launcher lee estos archivos cada vez que se abre para saber qué versión del juego instalar, qué mods bajar y a qué servidor conectarse. En la práctica, este repo es su backend.
+Configuration for the TikiTiki Minecraft server (Cobblemon, 1.21.1) and its launcher. The launcher reads these files every time it opens to know which game version to install, which mods to download and which server to connect to. In practice, this repo is its backend.
 
-## Archivos
+## Files
 
-| Archivo | Qué tiene |
+| File | What's in it |
 |---|---|
-| `version.json` | La última versión del launcher, con el link al `.exe` y su SHA-1, para que se actualice solo. |
-| `launcher.json` | El modpack: versión de Minecraft, loader, los mods con su URL, SHA-1 y tamaño, los archivos de configuración y las skins. |
-| `servers/` | Servidores que arman los jugadores desde el launcher, uno por archivo. |
-| `skins/` | Skins por defecto que ofrece el launcher. |
+| `version.json` | The latest launcher version, with the link to the `.exe` and its SHA-1, so it updates itself. |
+| `launcher.json` | The modpack: Minecraft version, loader, the mods with their URL, SHA-1 and size, the config files and the skins. |
+| `servers/` | Servers that players set up from the launcher, one per file. |
+| `skins/` | Default skins the launcher offers. |
 | `packs/` | Resource packs. |
-| `server/icon.png` | Ícono del servidor. |
+| `server/icon.png` | The server icon. |
 
-Cada descarga viene con su SHA-1 y su tamaño, así el launcher puede comprobar que lo que bajó está entero. Los archivos pesados (el launcher, los mods del servidor, los packs y las copias del mundo) van como assets de los releases y no dentro del repo.
+Every download comes with its SHA-1 and size, so the launcher can check that what it got is complete. The heavy files (the launcher, server mods, packs and world backups) are release assets rather than part of the repo.
 
-## Sobre el historial
+## About the history
 
-Los commits "Dirección del server TikiTiki" y "Actualiza la lista del server" los hace el launcher solo, cuando alguien abre un servidor y cambia la dirección del túnel. No son cambios hechos a mano.
+The "Dirección del server TikiTiki" and "Actualiza la lista del server" commits (server address and server list updates) are made by the launcher itself when someone opens a server and the tunnel address changes. They're not edits by hand.
